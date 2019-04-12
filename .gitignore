@@ -1,0 +1,4 @@
+.idea/
+.nuxt/
+dist/*
+node_modules/*

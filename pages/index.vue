@@ -1,29 +1,38 @@
 <template>
-  <section class="container">
+  <section class="container" id="alertMsg">
     <div>
-      <logo />
-      <h1 class="title">
-        DEPLOY TEST
-      </h1>
-      <h2 class="subtitle">
-        My awesome recipe book app
-      </h2>
+      <p class="title">
+        준비중 / 공사중
+      </p>
+      <p class="subtitle">
+        아직볼게 없어요....<br>
+      </p>
+      <div>
+        <img src="https://cdn-images-1.medium.com/max/1200/1*oEuJgRJZrcjZBw-U95kl3Q.png" alt="nuxt+heroku"/>
+      </div>
+      <p class="desc">comming soon!</p>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://naver.com"
           target="_blank"
           class="button--green"
-        >Documentation</a>
+        >볼게없을땐 네이버!</a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://google.co.kr"
           target="_blank"
           class="button--grey"
-        >GitHub</a>
+        >볼게없을땐 구글!</a>
       </div>
     </div>
   </section>
 </template>
 
+<style scope>
+  #alertMsg{text-align:center;margin-top:40px}
+  #alertMsg .title{font-size:50px;font-weight:bold}
+  #alertMsg .subtitle{font-size:25px;margin-top:20px}
+  #alertMsg .desc{font-size:30px;font-weight:bold;text-transform:uppercase;margin-top:20px;margin-bottom:20px}
+</style>
 <!--<script>-->
 <!--import Logo from '~/components/Logo.vue'-->
 

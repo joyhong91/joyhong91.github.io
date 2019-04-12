@@ -11,7 +11,12 @@
     "generate": "nuxt generate",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines":{
+    "node": "8.11.3",
+    "npm": "6.7.0"
   },
   "dependencies": {
     "nuxt": "^2.6.1"

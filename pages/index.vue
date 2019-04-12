@@ -2,7 +2,7 @@
   <section class="container" id="alertMsg">
     <div>
       <p class="title">
-        준비중 / 공사중
+        준비중 / 공사중    
       </p>
       <p class="subtitle">
         아직볼게 없어요....<br>

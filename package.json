@@ -15,8 +15,8 @@
     "heroku-postbuild": "npm run build"
   },
   "engines":{
-    "node": "8.0.0",
-    "npm": "5.0.0"
+    "node": "8.11.3",
+    "npm": "6.7.0"
   },
   "dependencies": {
     "nuxt": "^2.6.1"

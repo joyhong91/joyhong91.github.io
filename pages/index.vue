@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        recipes
+        DEPLOY TEST
       </h1>
       <h2 class="subtitle">
         My awesome recipe book app

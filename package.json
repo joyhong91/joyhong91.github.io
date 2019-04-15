@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "node-server": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -17,6 +18,7 @@
     "npm": "6.7.0"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "nuxt": "^2.6.1",
     "vue": "^2.6.10",
     "vue-notifications": "^0.9.0"

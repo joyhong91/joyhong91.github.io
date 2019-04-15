@@ -1,4 +1,4 @@
-import pkg from './package'
+const pkg = require('./package');
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
@@ -6,7 +6,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   }
 } : {}
 
-export default {
+module.exports = {
   ...routerBase,
   mode: 'universal',
 

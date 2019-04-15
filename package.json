@@ -14,12 +14,14 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "heroku-postbuild": "npm run build"
   },
-  "engines":{
+  "engines": {
     "node": "8.11.3",
     "npm": "6.7.0"
   },
   "dependencies": {
-    "nuxt": "^2.6.1"
+    "nuxt": "^2.6.1",
+    "vue": "^2.6.10",
+    "vue-notifications": "^0.9.0"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",

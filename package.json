@@ -1,7 +1,7 @@
 {
   "name": "pf",
   "version": "1.0.0",
-  "description": "My portfolio",
+  "description": "joy's portfolio",
   "author": "joy.hong",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "publish": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup",
     "heroku-postbuild": "npm run build"
   },
   "engines": {

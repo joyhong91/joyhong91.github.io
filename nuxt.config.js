@@ -14,11 +14,14 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'joy\'s portfolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
+    ],
+    script: [
+      { type: 'text/javascript', src: 'https://code.jquery.com/jquery-1.12.4.min.js' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -34,6 +37,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/main.scss'
   ],
 
   /*

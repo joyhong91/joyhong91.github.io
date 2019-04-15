@@ -9,9 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "publish": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "heroku-postbuild": "npm run build"
   },
   "engines": {
@@ -25,7 +23,9 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
+    "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "sass-loader": "^7.1.0"
   }
 }

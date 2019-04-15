@@ -6,7 +6,7 @@
         준비중 / 공사중
       </p>
       <p class="subtitle">
-        아직볼게 없어요....<br>
+        아직볼게 없어요....ㅠㅠ<br>
       </p>
       <div class="main_img">
         <img src="https://cdn-images-1.medium.com/max/1200/1*oEuJgRJZrcjZBw-U95kl3Q.png" alt="nuxt+heroku"/>

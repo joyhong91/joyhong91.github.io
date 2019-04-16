@@ -1,6 +1,6 @@
 <template>
 	<div class="bg_main">
-		<img src="@/assets/image/main_img.jpeg" alt="메인배경이미지" class="bg_img">
+		<img src="~/assets/image/main_img.jpeg" alt="메인배경이미지" class="bg_img">
 		<div class="bg_overlay"></div>
 		
 		<div class="wrap_btn">

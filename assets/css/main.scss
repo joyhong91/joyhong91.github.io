@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 html {
   /*font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',*/
   /*Roboto, 'Helvetica Neue', Arial, sans-serif;*/
@@ -27,11 +25,10 @@ html {
   color: #3b8070;
   text-decoration: none;
   padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+  &:hover{
+    color: #fff;
+    background-color: #3b8070;
+  }
 }
 
 .button--grey {
@@ -42,9 +39,46 @@ html {
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
+  &:hover{
+    color: #fff;
+    background-color: #35495e;
+  }
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+header{
+  position:fixed;
+  top:0;
+  z-index:1;
+  width: 100%;
+  height: 50px;
+  padding: 12px;
+  background: #000;
+  opacity: .4;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  margin: 0 10px;
+  display:inline-block;
+}
+
+li:hover{
+  opacity:1;
+  font-weight:bold;
+}
+
+a{
+  text-decoration: none;
+  text-transform:uppercase;
+  color: white;
+  opacity: .8;
+}
+
+img{
+  width:100%;
 }

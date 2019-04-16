@@ -24,7 +24,8 @@ module.exports = {
       { type: 'text/javascript', src: 'https://code.jquery.com/jquery-1.12.4.min.js' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans' }
     ]
   },
 

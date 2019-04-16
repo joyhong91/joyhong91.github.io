@@ -12,18 +12,6 @@
         <img src="https://cdn-images-1.medium.com/max/1200/1*oEuJgRJZrcjZBw-U95kl3Q.png" alt="nuxt+heroku"/>
       </div>
       <p class="desc">comming soon!</p>
-      <div class="links">
-        <a
-          href="https://naver.com"
-          target="_blank"
-          class="button--green"
-        >볼게없을땐 네이버!</a>
-        <a
-          href="https://google.co.kr"
-          target="_blank"
-          class="button--grey"
-        >볼게없을땐 구글!</a>
-      </div>
     </div>
   </section>
 </template>
@@ -32,8 +20,7 @@
   #alertMsg{text-align:center;margin-top:40px}
   #alertMsg .title{font-size:50px;font-weight:bold;margin-top:20px}
   #alertMsg .subtitle{font-size:25px;margin-top:20px}
-  #alertMsg .desc{font-size:30px;font-weight:bold;text-transform:uppercase;margin-top:20px;margin-bottom:20px}
-  #alertMsg .main_img img{width:100%;height:auto}
+  #alertMsg .desc{font-size:30px;font-weight:bold;text-transform:uppercase;margin-top:20px;margin-bottom:40px}
 </style>
 <!--<script>-->
 <!--import Logo from '~/components/Logo.vue'-->

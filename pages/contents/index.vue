@@ -1,6 +1,6 @@
 <template>
   <section class="recipes">
-    <Recipe
+    <Body
       v-for="recipe in recipes"
       :key="recipe.id"
       :thumbnail="recipe.thumbnail"
@@ -13,11 +13,11 @@
 
 
 <script>
-  import Recipe from '@/components/Recipe'
+  import Body from '@/components/Content'
   
   export default {
     components: {
-      Recipe
+      Body
     },
     asyncData() {
       return new Promise((resolve, reject) => {

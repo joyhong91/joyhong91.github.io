@@ -2,10 +2,10 @@
 	<div class="bg_main">
 		<img src="~/assets/image/main_img.jpeg" alt="메인배경이미지" class="bg_img">
 		<div class="bg_overlay"></div>
-		
+
 		<div class="wrap_btn">
-		<a href="https://naver.com" target="_blank" class="button--green"> 볼게없을땐 네이버!</a>
-		<a href="https://google.co.kr" target="_blank" class="button--grey" >볼게없을땐 구글!</a>
+		<a href="javascript:;" target="_blank" class="button--green"> BLANK</a>
+		<a href="https://google.co.kr" target="_blank" class="button--grey" >BLANK2</a>
 	</div>
 	</div>
 </template>

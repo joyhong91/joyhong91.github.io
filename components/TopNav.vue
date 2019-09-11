@@ -2,19 +2,17 @@
   <header>
     <nav>
       <ul class="list_nav">
-        <li>
-          <nuxt-link to="/" @click.native="alert" data-tabIdx="0">home</nuxt-link>
+        <li data-tabIdx="0">
+          <nuxt-link to="/" @click.native="alert" >home</nuxt-link>
         </li>
-        <li>
-          <nuxt-link to="/" @click.native="alert" data-tabIdx="1">intro</nuxt-link>
+        <li data-tabIdx="1">
+          <nuxt-link to="/" @click.native="alert">intro</nuxt-link>
         </li>
-        <!--/recipes-->
-        <li>
-          <nuxt-link to="/" @click.native="alert" data-tabIdx="2">skills</nuxt-link>
+        <li data-tabIdx="2">
+          <nuxt-link to="/" @click.native="alert">skills</nuxt-link>
         </li>
-        <!--/about-->
-        <li>
-          <nuxt-link to="/" @click.native="alert" data-tabIdx="3">project</nuxt-link>
+        <li data-tabIdx="3">
+          <nuxt-link to="/" @click.native="alert">project</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -47,10 +45,10 @@ export default {
       const skillY = $(`.wrap_cont[data-tabIdx="${IDXES.skill}"]`).offset().top;
       const projectY = $(`.wrap_cont[data-tabIdx="${IDXES.project}"]`).offset().top;
 
-      if(scrollY >= introY && scrollY < skillY) {
+      if(scrollY >= introY - 5 && scrollY < skillY - 5) {
         $navItem.removeClass('on');
         $navItem.eq(IDXES.intro).addClass('on');
-      }else if (scrollY >= skillY && scrollY < projectY) {
+      }else if (scrollY >= skillY - 5 && scrollY < projectY - 5) {
         $navItem.removeClass('on');
         $navItem.eq(IDXES.skill).addClass('on');
       } else if(scrollY > projectY){
@@ -61,8 +59,25 @@ export default {
         $navItem.eq(0).addClass('on');
       }
     },
-    alert() {
-      alert("Hello " + this.msg + "!");
+    alert(e) {
+      const $curElem = $(e.currentTarget).closest('li');
+      const $navItem = $('header nav li');
+
+      $navItem.removeClass('on');
+      $curElem.addClass('on');
+
+      let curIdx = $curElem.data('tabidx');
+      let scrollPos = 0;
+
+      if(curIdx !== 0) {
+        scrollPos = $(`.wrap_cont[data-tabIdx="${curIdx}"]`).offset().top;
+      }
+
+      $('html, body').animate({
+          scrollTop: scrollPos
+        }, 600);
+      
+      // alert("Hello " + this.msg + "!");
     },
     handleScroll() {
       this.activeNavBy(window.scrollY);

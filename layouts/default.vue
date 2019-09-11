@@ -1,19 +1,28 @@
 <template>
   <div>
-    <Header/>
-    <Main/>
+    <TopNav />
+    <Main />
+    <Intro />
+    <Skill />
+    <Projects />
     <nuxt />
   </div>
 </template>
 
 <script>
-  import Header from '@/components/Header';
-  import Main from '@/components/Main';
+import TopNav from "@/components/TopNav";
+import Main from "@/components/Main";
+import Projects from "@/components/Projects";
+import Intro from "@/components/Intro";
+import Skill from "@/components/Skill";
 
-  export default{
-    components:{
-      Header,
-      Main
-    }
+export default {
+  components: {
+    TopNav,
+    Main,
+    Projects,
+    Intro,
+    Skill
   }
+};
 </script>

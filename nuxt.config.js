@@ -1,4 +1,5 @@
 const pkg = require('./package');
+const webpack = require('webpack');
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
@@ -45,6 +46,11 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      'window.jQuery': 'jquery'
+    })
   ],
 
   /*
@@ -53,6 +59,9 @@ module.exports = {
   modules: [
   ],
 
+  vender: [
+    'jquery'
+  ],
   /*
   ** Build configuration
   */
@@ -60,6 +69,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+  
     extend(config, ctx) {
     }
   }

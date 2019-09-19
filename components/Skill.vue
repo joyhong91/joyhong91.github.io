@@ -49,10 +49,8 @@
 
 <style scoped>
 .wrap_skill{font-size:0;overflow:hidden}
-.wrap_skill .box_skill{width:20%;float:left;text-align:center}
-.wrap_skill .thumb_js{background:rgba(0,0,0,.7);width:100px;height:100px;border-radius:50%;margin: 0 auto}
-.wrap_skill .thumb_js > img {width:80px; height:80px;margin-top:8px}
-.wrap_skill .skill_img{width:100px;height:100px}
+.wrap_skill .box_skill{width:20%;float:left;text-align:center;padding:2%}
+.wrap_skill .thumb_js{background:rgba(0,0,0,.7);border-radius:50%;padding:15px}
 .wrap_skill .wrap_info{display:block;font-size:14px}
 </style>
 

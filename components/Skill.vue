@@ -2,12 +2,58 @@
   <div class="wrap_cont" data-tabIdx="2">
     <em>skill</em>
     <div class="wrap_skill">
-      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+      <div class="box_skill">
+        <div class="wrap_thumb">
+          <img src="~/assets/image/skills/ico_ruby.png" alt="" class="skill_img">
+        </div>
+        
+        <span class="wrap_info">
+          <span class="tit">ruby</span>
+        </span>
+      </div>
+      <div class="box_skill">
+        <div class="wrap_thumb">
+          <img src="~/assets/image/skills/ico_rails.png" alt="" class="skill_img">
+        </div>
+        <span class="wrap_info">
+          <span class="tit">rails</span>
+        </span>
+      </div>
+      <div class="box_skill">
+        <div class="wrap_thumb thumb_js">
+          <img src="~/assets/image/skills/ico_js.png" alt="" class="skill_img">
+        </div>
+        <span class="wrap_info">
+          <span class="tit">js</span>
+        </span>
+      </div>
+      <div class="box_skill">
+        <div class="wrap_thumb">
+          <img src="~/assets/image/skills/ico_html5.png" alt="" class="skill_img">
+        </div>
+        <span class="wrap_info">
+          <span class="tit">html5</span>
+        </span>
+      </div>
+      <div class="box_skill">
+        <div class="wrap_thumb">
+          <img src="~/assets/image/skills/ico_css.png" alt="" class="skill_img">
+        </div>
+        <span class="wrap_info">
+          <span class="tit">css</span>
+        </span>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.wrap_skill{font-size:0;overflow:hidden}
+.wrap_skill .box_skill{width:20%;float:left;text-align:center}
+.wrap_skill .thumb_js{background:rgba(0,0,0,.7);width:100px;height:100px;border-radius:50%;margin: 0 auto}
+.wrap_skill .thumb_js > img {width:80px; height:80px;margin-top:8px}
+.wrap_skill .skill_img{width:100px;height:100px}
+.wrap_skill .wrap_info{display:block;font-size:14px}
 </style>
 
 <script>
